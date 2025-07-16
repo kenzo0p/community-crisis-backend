@@ -8,20 +8,28 @@
     "start": "nodemon dist/index.js",
     "dev": "pnpm run build && pnpm run start",
     "format": "prettier --write \"src/**/*.{js,ts,tsx,jsx,json,css,scss,md}\"",
-    "format:check": "prettier --check \"src/**/*.{js,ts,tsx,jsx,json,css,scss,md}\""
+    "format:check": "prettier --check \"src/**/*.{js,ts,tsx,jsx,json,css,scss,md}\"",
+    "prisma:migrate": "prisma migrate dev",
+    "prisma:generate": "prisma generate",
+    "prisma:studio": "prisma studio"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.12.4",
+  "packageManager": "pnpm@10.13.1",
   "dependencies": {
-    "@prisma/client": "^6.11.1",
+    "@prisma/client": "^6.12.0",
     "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.0.14",
     "dotenv": "^17.2.0",
     "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
     "pg": "^8.16.3",
     "prettier": "^3.6.2",
-    "prisma": "^6.11.1",
     "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "prisma": "^6.12.0"
   }
 }
