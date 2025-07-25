@@ -13,3 +13,6 @@ docker run --name my-postgres-db   -e POSTGRES_USER=postgres   -e POSTGRES_PASSW
 
 
 docker start my-postgres-db
+
+important command genrate the prisma client
+pnpm run prisma:generate
