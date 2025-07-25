@@ -4,7 +4,7 @@ import express from 'express';
 import { errorHandler } from './middlewares/errorHandler';
 import authRouter from './routes/auth.routes';
 const SERVER_PORT = process.env.PORT;
-const app = express();
+export const app = express();
 
 app.use(express.json());
 app.use(express.urlencoded({extended : true}))

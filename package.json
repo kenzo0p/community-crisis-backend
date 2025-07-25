@@ -11,7 +11,8 @@
     "format:check": "prettier --check \"src/**/*.{js,ts,tsx,jsx,json,css,scss,md}\"",
     "prisma:migrate": "prisma migrate dev",
     "prisma:generate": "prisma generate",
-    "prisma:studio": "prisma studio"
+    "prisma:studio": "prisma studio",
+    "test" :"jest"
   },
   "keywords": [],
   "author": "",
@@ -31,8 +32,13 @@
     "zod": "^4.0.5"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.0.14",
+    "@types/supertest": "^6.0.3",
+    "jest": "^30.0.5",
     "prisma": "^6.12.0",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
